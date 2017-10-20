@@ -1,0 +1,14 @@
+@import '~styles/settings/settings';
+
+.createQuestionForm
+{
+  &__field {
+    @include border();
+    padding-bottom: $rem-sm;
+    margin-bottom: $rem-lg;
+
+    &__descriptionInput {
+      border-radius: 0.3125rem;
+    }
+  }
+}

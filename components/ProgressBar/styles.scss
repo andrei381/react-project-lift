@@ -1,0 +1,8 @@
+@import '~styles/settings/settings';
+
+.progressBar {
+  > svg {
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}

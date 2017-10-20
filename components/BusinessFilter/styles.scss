@@ -1,0 +1,19 @@
+@import '~styles/settings/settings';
+
+.businessFilter {
+  padding-top: $rem-xl;
+  padding-bottom: $rem-md;
+  background-color: $lighter-gray;
+  &__label {
+    line-height: $rem-xl;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__toggle {
+    width: 122px;
+  }
+  &__bottom {
+    padding-top: $rem-md;
+    @include border($light-gray, top);
+  }
+}

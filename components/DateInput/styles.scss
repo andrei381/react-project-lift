@@ -1,0 +1,15 @@
+@import '~styles/settings/settings';
+
+$rw-font-path: '~react-widgets/lib/fonts';
+$rw-img-path:  '~react-widgets/lib/img';
+
+@import "~react-widgets/lib/scss/variables.scss";
+@import "~react-widgets/lib/scss/bootstrap-theme.scss";
+
+@import "~react-widgets/lib/scss/mixins.scss";
+@import "~react-widgets/lib/scss/normalize.scss";
+@import "~react-widgets/lib/scss/icons.scss";
+
+@import "~react-widgets/lib/scss/core.scss";
+@import "~react-widgets/lib/scss/popup.scss";
+@import "~react-widgets/lib/scss/datepicker.scss";

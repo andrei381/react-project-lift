@@ -1,0 +1,31 @@
+@import '~styles/settings/settings';
+
+.businessItem {
+  border-bottom: 1px solid $light-gray;
+
+  &__image {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 0 1px $light-gray;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+  }
+
+  &__actionLink {
+    text-decoration: none;
+  }
+  &__titleLink {
+    text-decoration: none;
+    color: black;
+  }
+  &__name {
+    display: inline-block;
+  }
+  &__icon {
+    cursor: pointer;
+    margin-right: rem-calc(20);
+  }
+}

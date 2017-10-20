@@ -1,0 +1,78 @@
+@import '~styles/settings/settings';
+
+.rewardsCard {
+  background-color: $secondary;
+  color: #FFF;
+  padding: $rem-md;
+  margin-bottom: $rem-sm;
+  border: 1px solid $light-gray;
+  border-radius: $global-radius;
+
+  &__title {
+    font-size: $rem-md;
+    border-bottom: 1px #FFF solid;
+  }
+}
+
+.pointsContainer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  &__logo {
+    max-width: 75px;
+  }
+  &__points {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.redemptionsRewardsCard {
+  border: 1px solid $light-gray;
+  border-radius: $global-radius;
+  padding: $rem-sm $rem-mx;
+  margin-bottom: $rem-mx;
+
+  &__text {
+    margin-top: $rem-sm;
+  }
+
+  .discount-code {
+    font-size: $rem-lg;
+    color: $secondary;
+    text-align: center;
+  }
+}
+
+.imgGrayscale {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+.availableRewardCard {
+  border: 1px solid $light-gray;
+  border-radius: $global-radius;
+  padding: $rem-mn;
+  margin-bottom: $rem-mx;
+
+  &__rewardPrice {
+    margin-right: $rem-lg;
+    font-size: $rem-md;
+  }
+}
+
+.thumbnailImage {
+  max-width: 120px;
+}
+
+.pullRight {
+  float: right;
+}
+
+.rewardsPointsTotal {
+  font-size: 1.5em;
+  margin-right: 1em;
+}

@@ -1,0 +1,25 @@
+@import '~styles/settings/settings';
+
+.banner {
+  margin-bottom: $rem-xxl;
+  background-image: url('./bg.jpg');
+  background-color: #47c2cb;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $white;
+  &__inner {
+    @include breakpoint(large) {
+      height: 475px;
+      background-image: url('./banner-image.png');
+      background-repeat: no-repeat;
+      background-position: top 52.5% right;
+    }
+  }
+  &__content {
+    padding-top: $rem-xl;
+    padding-bottom: $rem-xl;
+  }
+  &__content--title {
+    font-weight: 900;
+  }
+}

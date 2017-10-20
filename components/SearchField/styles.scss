@@ -1,0 +1,57 @@
+@import '~styles/settings/settings';
+
+.searchField {
+  position: relative;
+  &__input {
+    height: 40px;
+    min-width: 150px;
+    box-shadow: none;
+    background-color: $lighter-gray;
+    border-color: $light-gray;
+    text-transform: none;
+    @at-root {
+      .large & {
+        height: 50px;
+      }
+      .dark & {
+        background-color: $light-gray;
+      }
+    }
+  }
+  &__button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    padding: 0 !important;
+    @at-root .large & {
+      top: 7px;
+      right: 7px;
+    }
+  }
+  &__icon {
+    display: inline-flex;
+  }
+  &__location {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    @include breakpoint(medium) {
+      right: 75px;
+    }
+  }
+  &__locationIcon {
+    color: $alert;
+    margin-right: $rem-tn;
+  }
+  &__locationText {
+    font-size: $fs-tn;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

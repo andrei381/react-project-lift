@@ -1,0 +1,10 @@
+@import '~styles/settings/settings';
+
+.starRating {
+  display: flex;
+  > span {
+    &:not(:first-child) {
+      margin-left: 3px;
+    }
+  }
+}

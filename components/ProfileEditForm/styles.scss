@@ -1,0 +1,50 @@
+@import '~styles/settings/settings';
+
+.profileEditForm {
+  &__dateInput {
+    padding: 0;
+  }
+  &__hiddenInput {
+    display: none;
+  }
+  tbody th, tbody td {
+    padding: 0;
+  }
+  &__bioInput {
+    border-radius: $global-radius;
+  }
+  &__inputLabel {
+    margin-left: $rem-md;
+  }
+  &__photoUploader {
+    border: 1px solid $medium-gray;
+    border-radius: $global-radius;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__avatar {
+    height: 170px;
+    margin: $rem-xl;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+  }
+  &__uploadButtonBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $medium-gray;
+  }
+  &__uploadButton {
+    background-color: $white;
+    color: $secondary;
+    outline: none;
+    &:hover, &:focus {
+      background-color: $white;
+      color: $secondary;
+      outline: none;
+    }
+  }
+}

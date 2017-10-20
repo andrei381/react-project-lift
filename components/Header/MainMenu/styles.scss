@@ -1,0 +1,80 @@
+@import '~styles/settings/settings';
+
+.mainMenu {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: rem-calc(760);
+  @include breakpoint(small only) {
+    margin-top: $rem-tn;
+    margin-bottom: $rem-mn;
+  }
+  @include breakpoint(medium) {
+    justify-content: space-between;
+  }
+  &__item {
+    &:not(:last-child) {
+      @include breakpoint(medium) {
+        margin-right: $rem-xl;
+      }
+    }
+    @include breakpoint(small only) {
+      width: 100%;
+      &:not(:first-child) {
+        padding-top: $rem-mn;
+      }
+      padding-right: map-get($grid-column-gutter, small) / 2;
+      padding-left: map-get($grid-column-gutter, small) / 2;
+      padding-bottom: $rem-mn;
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+
+  &__subMenuItem {
+    &:not(:last-child) {
+      @include breakpoint(medium) {
+        margin-right: $rem-xl;
+      }
+    }
+    @include breakpoint(small only) {
+      width: 100%;
+      &:not(:first-child) {
+        padding-top: $rem-mn;
+      }
+      padding-right: map-get($grid-column-gutter, small) / 2;
+      padding-left: map-get($grid-column-gutter, small) / 2;
+      padding-bottom: $rem-mn;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $darker-gray;
+    font-size: $fs-md;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    &--active {
+      color: $secondary-color;
+    }
+    &--hasChildren, &--closed {
+      &:after {
+        display: block;
+        margin-left: $rem-tn;
+        content: '';
+        @include css-triangle(4px, black, down);
+      }
+    }
+    &--opened {
+      &:after {
+        display: block;
+        margin-left: $rem-tn;
+        content: '';
+        @include css-triangle(4px, black, up);
+      }
+    }
+    &:focus, &:hover {
+      color: $darker-gray;
+    }
+  }
+}

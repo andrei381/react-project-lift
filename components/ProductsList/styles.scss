@@ -1,0 +1,11 @@
+@import '~styles/settings/settings';
+
+.productsList {
+  &__item {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: $rem-xl;
+    padding-bottom: $rem-sm;
+  }
+}

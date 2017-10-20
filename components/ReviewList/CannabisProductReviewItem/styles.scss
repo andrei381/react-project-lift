@@ -1,0 +1,41 @@
+@import '~styles/settings/settings';
+
+.cannabisProductReviewItem {
+  font-size: rem-calc(16);
+  color: $darker-gray;
+
+  &__image {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 0 1px $light-gray;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: $rem-xl;
+    border: none;
+
+    &--default {
+      background-image: url('~images/default-avatar.jpg');
+    }
+  }
+  &__voteLink {
+    text-transform: none;
+    font-size: $fs-md;
+  }
+
+  &__batchLabel {
+    display: inline-block;
+    font-size: $fs-tn;
+    font-weight: 600;
+    padding-right: $rem-sm;
+    text-transform: uppercase;
+  }
+  &__batchValue {
+    display: inline-block;
+    font-size: $fs-mx;
+  }
+  &__ellipsisMessage {
+    word-break: break-word;
+  }
+}

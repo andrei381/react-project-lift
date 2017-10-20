@@ -1,0 +1,106 @@
+@import '~styles/settings/settings';
+
+.userDropdownMobile {
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  &__avatar {
+    width: 33px;
+    height: 33px;
+    margin-right: $rem-mn;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+  }
+  &__points {
+    font-size: $fs-tn;
+    text-transform: uppercase;
+    color: $darkest-primary;
+    font-weight: bold;
+  }
+  &__reputation {
+    white-space: nowrap;
+    color: $dark-gray;
+    font-size: $fs-sm;
+  }
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: $darkest-primary;
+    @include breakpoint(small only) {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      z-index: 30;
+      background-color: $white;
+      transform: translateX(-#{map-get($breakpoints, medium)});
+      transition: box-shadow .5s ease-out,transform .5s ease-out;
+      &.isOpen {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__closeIcon {
+    @include breakpoint(small only) {
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      fill: $white;
+    }
+  }
+  &__menuItem {
+    padding: $rem-sm $rem-mn;
+    cursor: pointer;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+    &--hasNotifications {
+      &:after {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: $rem-lg;
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $alert;
+      }
+    }
+    &:first-child {
+      font-size: $fs-tn;
+      font-weight: 600;
+      color: $white;
+      padding-bottom: $rem-mn;
+      padding-top: $rem-mn;
+      margin-bottom: $rem-sm;
+      border-bottom: 1px solid $light-gray;
+      background-image: url('~images/bg-user-menu.jpg');
+    }
+    &:last-child {
+      padding-top: $rem-mn;
+      padding-bottom: $rem-mn;
+      margin-top: $rem-sm;
+      border-top: 1px solid $light-gray;
+    }
+  }
+  &__menuLink {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: inherit;
+  }
+  &__editIcon {
+    fill: $white;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}

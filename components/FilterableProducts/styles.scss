@@ -1,0 +1,33 @@
+@import '~styles/settings/settings';
+
+.filterableProducts {
+  &__item {
+    padding-bottom: $rem-xl;
+    margin-bottom: $rem-xl;
+    border-bottom: 1px solid $light-gray;
+  }
+  &__title {
+    text-transform: capitalize;
+    margin: 0;
+    line-height: 1;
+  }
+  &__buttonGroup {
+    display: inline-flex;
+  }
+  &__buttonGroupItem {
+    width: rem-calc(140);
+  }
+  &__carousel {
+    > div { // there's no possibility to set a className for unslicked carousel
+      @include breakpoint(medium) {
+        display: flex;
+        flex-flow: row wrap;
+      }
+    }
+    .product {
+      @include breakpoint(small only) {
+        padding-bottom: $rem-xl;
+      }
+    }
+  }
+}

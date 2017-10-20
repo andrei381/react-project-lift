@@ -1,0 +1,35 @@
+@import '~styles/settings/settings';
+
+.breadcrumbs {
+  margin: 0 0 $rem-xl;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+  color: $darkest-primary;
+  font-weight: bold;
+  font-size: $fs-md;
+  &__group {
+    display: inline-block;
+    &:not(:first-child) {
+      margin-left: $rem-mn;
+    }
+  }
+  &__item {
+    display: inline-block;
+    &:not(:first-child) {
+      margin-left: $rem-mn;
+    }
+    &--current {
+      text-transform: capitalize;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-size: $fs-md;
+    text-transform: capitalize;
+    color: $darkest-primary;
+    text-decoration: none;
+    font-weight: normal;
+  }
+}

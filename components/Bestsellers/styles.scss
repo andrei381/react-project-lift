@@ -1,0 +1,9 @@
+@import '~styles/settings/settings';
+
+.bestsellers {
+  margin-bottom: $rem-xl;
+  @include border();
+  &__item {
+    margin-bottom: $rem-xl;
+  }
+}

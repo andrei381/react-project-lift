@@ -1,0 +1,26 @@
+@import '~styles/settings/settings';
+
+.filter {
+  padding-top: $rem-xl;
+  padding-bottom: $rem-md;
+  margin-bottom: $rem-xl;
+  background-color: $lighter-gray;
+  &__label {
+    line-height: $rem-xl;
+    font-size: $fs-tn;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__toggle {
+    width: 122px;
+  }
+  &__topItem {
+    margin-bottom: $rem-md;
+  }
+  &__bottom {
+    margin-top: $rem-md;
+    margin-bottom: $rem-md;
+    padding-top: $rem-md;
+    @include border($light-gray, top);
+  }
+}

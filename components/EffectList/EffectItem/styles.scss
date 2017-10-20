@@ -1,0 +1,23 @@
+@import '~styles/settings/settings';
+
+.effectItem {
+  border: 1px solid $light-gray;
+  border-radius: $rem-tn;
+  padding: $rem-tn $rem-sm;
+  margin-right: $rem-md;
+  margin-bottom: $rem-sm;
+  position: relative;
+
+  &__close {
+    margin-left: $rem-sm;
+    cursor: pointer;
+    vertical-align: baseline;
+    @include breakpoint(small only) {
+      position: absolute;
+      top: $rem-sm;
+      right: $rem-sm;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

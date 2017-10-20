@@ -1,0 +1,36 @@
+@import '~styles/settings/settings';
+
+.pageBanner {
+  position: relative;
+  margin-bottom: $rem-xl;
+  color: $white;
+  background-color: #757a7b;
+  &__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: rem-calc(110);
+    padding: 0 $rem-sm;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    &--large {
+      @include breakpoint(large) {
+        font-size: rem-calc(60);
+      }
+    }
+  }
+  &__subtitle {
+    margin: 0;
+    text-transform: none;
+    font-weight: bold;
+  }
+}

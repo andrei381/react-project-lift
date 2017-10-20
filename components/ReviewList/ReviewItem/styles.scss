@@ -1,0 +1,33 @@
+@import '~styles/settings/settings';
+
+.reviewItem {
+  font-size: rem-calc(16);
+  color: $darker-gray;
+
+  &__reviewItemRow {
+    border-bottom: rem-calc(1) solid $light-gray;
+  }
+  &__image {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 0 1px $light-gray;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: $rem-xl;
+    border: none;
+
+    &--default {
+      background-image: url('~images/default-avatar.jpg');
+    }
+  }
+  &__voteLink {
+    text-transform: none;
+    font-size: $fs-md;
+  }
+  &__shareLink {
+    margin-right: $rem-sm;
+    display: inline-block;
+  }
+}

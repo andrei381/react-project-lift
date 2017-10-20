@@ -1,0 +1,24 @@
+@import '~styles/settings/settings';
+
+.productsCarousel {
+  margin-bottom: $rem-xl;
+  border-bottom: 1px solid $light-gray;
+  &__title {
+    text-transform: capitalize;
+    margin: 0 0 $rem-xl;
+    line-height: 1;
+  }
+  &__carousel {
+    > div { // there's no possibility to set a className for unslicked carousel
+      @include breakpoint(medium) {
+        display: flex;
+        flex-flow: row wrap;
+      }
+    }
+    .product {
+      @include breakpoint(small only) {
+        padding-bottom: $rem-xl;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '~styles/settings/settings';
+
+.imageRadioGroup {
+  &__option {
+    vertical-align: middle;
+  }
+
+  &__icon {
+    margin-bottom: $rem-sm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

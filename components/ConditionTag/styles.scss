@@ -1,0 +1,17 @@
+@import '~styles/settings/settings';
+
+.conditionTag {
+  font-size: $fs-md;
+  padding: $rem-tn $rem-sm;
+  border: 1px solid $medium-gray;
+  border-radius: $rem-tn;
+  margin-right: $rem-mx;
+  margin-bottom: $rem-sm;
+  &__removeButton {
+    cursor: pointer;
+    margin-left: $rem-lg;
+    font-size: $fs-md;
+    font-weight: bold;
+  }
+}
+

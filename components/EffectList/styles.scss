@@ -1,0 +1,15 @@
+@import '~styles/settings/settings';
+
+.effectList {
+  &__button {
+    vertical-align: middle;
+    line-height: $fs-sm;
+    font-size: $fs-sm;
+  }
+  &__controlSection {
+    input {
+      display: inline-block;
+      padding-right: rem-calc(20);
+    }
+  }
+}

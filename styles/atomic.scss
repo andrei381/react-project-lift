@@ -1,0 +1,169 @@
+.nm {
+  margin: 0 !important;
+}
+
+.mt-md {
+  margin-top: $rem-md !important;
+}
+
+.mb-sm {
+  margin-bottom: $rem-sm !important;
+}
+.mb-mn {
+  margin-bottom: $rem-mn !important;
+}
+.mb-md {
+  margin-bottom: $rem-md !important;
+}
+.mb-mx {
+  margin-bottom: $rem-mx !important;
+}
+.mb-lg {
+  margin-bottom: $rem-lg !important;
+}
+.mb-xl {
+  margin-bottom: $rem-xl !important;
+}
+.mb-xxl {
+  margin-bottom: $rem-xxl !important;
+}
+.mb-hg {
+  margin-bottom: $rem-hg !important;
+}
+
+.mr-tn {
+  margin-right: $rem-tn !important;
+}
+.mr-sm {
+  margin-right: $rem-sm !important;
+}
+.mr-mn {
+  margin-right: $rem-mn !important;
+}
+.mr-md {
+  margin-right: $rem-md !important;
+}
+.mr-mx {
+  margin-right: $rem-mx !important;
+}
+.mr-lg {
+  margin-right: $rem-lg !important;
+}
+
+.ml-mn {
+  margin-left: $rem-mn !important;
+}
+
+.npr {
+  padding-right: 0 !important;
+}
+.npl {
+  padding-left: 0 !important;
+}
+
+.pt-md {
+  padding-top: $rem-md !important;
+}
+
+.pb-xl {
+  padding-bottom: $rem-xl !important;
+}
+.pl-lg {
+  padding-left: $rem-lg !important;
+}
+
+.fs-base {
+  font-size: $fs-base !important;
+}
+.fs-tn {
+  font-size: $fs-tn !important;
+}
+.fs-sm {
+  font-size: $fs-sm !important;
+}
+.fs-mn {
+  font-size: $fs-mn !important;
+}
+.fs-md {
+  font-size: $fs-md !important;
+}
+.fs-mx {
+  font-size: $fs-mx !important;
+}
+.fs-lg {
+  font-size: $fs-lg !important;
+}
+.fs-xl {
+  font-size: $fs-lg !important;
+}
+.fs-hg {
+  font-size: $fs-hg !important;
+}
+
+.c-primary {
+  color: $primary !important;
+}
+.c-darkest-primary {
+  color: $darkest-primary !important;
+}
+.c-secondary {
+  color: $secondary !important;
+}
+.c-danger {
+  color: $danger !important;
+}
+.c-green {
+  color: $green;
+}
+.c-white {
+  color: $white;
+}
+.c-inherit {
+  color: inherit;
+}
+
+.b-primary {
+  border: 1px solid $light-gray;
+}
+
+.t-nowrap {
+  white-space: nowrap !important;
+}
+.t-nt {
+  text-transform: none;
+}
+.t-lowercase {
+  text-transform: lowercase !important;
+}
+.t-capitalize {
+  text-transform: capitalize;
+}
+.t-uppercase {
+  text-transform: uppercase;
+}
+.t-columns {
+  columns: (map-get($breakpoints, medium) / 2) 2;
+}
+
+.d-if {
+  display: inline-flex;
+}
+.d-ib {
+  display: inline-block;
+}
+
+.has-b-b {
+  @include border;
+}
+
+.bt-medium-gray {
+  border-top: 1px solid $medium-gray;
+}
+
+.bt-light-gray {
+  border-top: 1px solid $light-gray;
+}
+
+.td-n {
+  text-decoration: none;
+}

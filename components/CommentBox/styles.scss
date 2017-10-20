@@ -1,0 +1,13 @@
+@import '~styles/settings/settings';
+
+.commentBox {
+  &__section {
+    width: 100%;
+    padding: $rem-lg $rem-hg;
+    color: $white;
+    background: $darker-gray url('~images/bg-comment.jpg');
+  }
+  &__actionLink {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,16 @@
+@import '~styles/settings/settings';
+
+.tagList {
+  &__controlSection {
+    input {
+      display: inline-block;
+      padding-right: rem-calc(20);
+    }
+  }
+  &__button {
+    vertical-align: middle;
+    line-height: $fs-sm;
+    font-size: $fs-sm;
+    margin-right: 10px;
+  }
+}

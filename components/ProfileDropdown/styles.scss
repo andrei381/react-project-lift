@@ -1,0 +1,45 @@
+@import '~styles/settings/settings';
+
+.profileDropdown {
+  cursor: pointer;
+  color: $secondary;
+  margin-bottom: $rem-lg;
+  &__selectedItem {
+    padding: $rem-sm $rem-mn;
+    border: 1px solid $secondary;
+    border-radius: $global-radius;
+    margin-bottom: $rem-sm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: $darkest-primary;
+    border: 1px solid $light-gray;
+    border-radius: $global-radius;
+    display: none;
+    &--open {
+      display: block;
+    }
+  }
+  &__menuItem {
+    padding: $rem-sm $rem-mn;
+    cursor: pointer;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+    &--selected {
+      color: $secondary;
+    }
+  }
+  &__menuLink {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: inherit;
+  }
+}

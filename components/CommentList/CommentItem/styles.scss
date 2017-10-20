@@ -1,0 +1,23 @@
+@import '~styles/settings/settings';
+
+.commentItem {
+  font-size: rem-calc(16);
+  color: $darker-gray;
+  @include border($light-gray, bottom);
+
+  &__image {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 0 1px $light-gray;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: $rem-xl;
+    border: none;
+
+    &--default {
+      background-image: url('~images/default-avatar.jpg');
+    }
+  }
+}

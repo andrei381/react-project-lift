@@ -1,0 +1,28 @@
+@import '~styles/settings/settings';
+
+.header {
+  padding-top: $rem-md;
+  padding-bottom: $rem-md;
+  &__authBtn {
+    min-width: 85px;
+  }
+  &__togglable {
+    @include breakpoint(small only) {
+      visibility: hidden;
+      height: 0;
+      @at-root .navbarOpen & {
+        visibility: visible;
+        height: auto;
+        transition: all 2s ease-in-out;
+      }
+    }
+  }
+  &__menuContainer {
+    @include breakpoint(small only) {
+      padding: 0;
+    }
+  }
+  &__logo {
+    color: $secondary-color;
+  }
+}

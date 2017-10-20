@@ -1,0 +1,24 @@
+@import '~styles/settings/settings';
+
+.productGallery {
+  &__img {
+    margin-bottom: $rem-md;
+  }
+  &__carousel {
+    padding: 0 $rem-hg;
+    .slick-prev {
+      left: -$rem-hg;
+    }
+    .slick-next {
+      right: -$rem-hg;
+    }
+  }
+  &__carouselImg {
+    width: 98px;
+    height: 98px;
+    margin: 0 15px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+}

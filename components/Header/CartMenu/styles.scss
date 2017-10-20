@@ -1,0 +1,18 @@
+@import '~styles/settings/settings';
+
+.cartMenu {
+  cursor: pointer;
+  padding-right: $rem-tn;
+  &__count {
+    font-size: $fs-tn;
+    background-color: $secondary;
+    color: $white;
+    font-weight: bold;
+    padding: 0px $rem-tn;
+    border-radius: 100px;
+    margin-left: $rem-tn;
+    display: flex;
+    align-items: center;
+    height: 17px;
+  }
+}

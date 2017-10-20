@@ -1,0 +1,13 @@
+@import '~styles/settings/settings';
+
+.productReviewForm {
+  &__ratingSection {
+    border-radius: $rem-tn;
+    padding: $rem-md $rem-lg;
+    border: 1px solid $light-gray;
+  }
+  &__ratingLabel {
+    width: 180px;
+    font-size: $fs-md;
+  }
+}

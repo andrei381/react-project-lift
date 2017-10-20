@@ -1,0 +1,20 @@
+@import '~styles/settings/settings';
+
+.highlightCard {
+  margin-bottom: $rem-xl;
+  @include border();
+  &__item {
+    margin-bottom: $rem-xl;
+  }
+  &__icon {
+    max-width: rem-calc(30);
+    margin-right: $rem-sm;
+  }
+  &__title {
+    color: $black;
+    text-decoration: none;
+    &:hover {
+      color: $black;
+    }
+  }
+}

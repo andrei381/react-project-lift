@@ -1,0 +1,12 @@
+@import '~styles/settings/settings';
+
+.adviceSearch {
+  margin-bottom: $rem-lg;
+  padding: $rem-xl $rem-sm;
+  @include breakpoint(medium) {
+    padding-left: $rem-xxl;
+    padding-right: $rem-xxl;
+  }
+  background-color: $lighter-gray;
+  color: $white;
+}
